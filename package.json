@@ -1,0 +1,40 @@
+{
+  "name": "mcp-svg-studio",
+  "version": "1.0.0",
+  "description": "Universal MCP Server providing official brand SVG logos (Simple Icons) & UI icons (Lucide) for AI coding assistants",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-svg-studio": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "svg",
+    "logos",
+    "lucide",
+    "simple-icons",
+    "claude",
+    "cursor"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.3.0",
+    "lucide-static": "^1.52.0",
+    "simple-icons": "^14.0.0",
+    "zod": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
